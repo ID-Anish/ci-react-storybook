@@ -1,0 +1,25 @@
+@import '../base/_fonts.scss';
+
+.page--heading{
+    margin: 0 0 2rem;
+    font-family: $headingFont;
+    text-align: left;
+}
+.page--heading-one{
+    font-size: 4rem;
+}
+.page--heading-two{
+    font-size: 3.2rem;
+}
+.page--heading-three{
+    font-size: 2.8rem;
+}
+.page--heading-four{
+    font-size: 2.4rem;
+}
+.page--heading-five{
+    font-size: 2rem;
+}
+.page--heading-six{
+    font-size: 1.6rem;
+}

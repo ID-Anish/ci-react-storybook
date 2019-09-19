@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Work+Sans:100,200,300,400,500,600,700,800,900');
+
+@font-face {
+  font-family: "Avenir Next Bold";
+  src: url("../../fonts/avenirnext-bold.otf"), url("../../fonts/avenirnext-bold.woff");
+  font-weight:bold;
+}
+@font-face {
+    font-family: "Avenir Next Normal";
+    src: url("../../fonts/avenirnext-regular.otf"), url("../../fonts/avenirnext-regular.woff");
+    font-weight:normal;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../../fonts/avenirnext-medium.otf"), url("../../fonts/avenirnext-medium.woff");
+}
+
+$bodyFont: "Work Sans";
+
+//heading
+$headingFont: "Avenir Next";
