@@ -4,7 +4,7 @@ import '../stylesheets/components/_heading.scss';
 class HeadingOne extends Component {
     render(){
         return(
-            <h1 className="page--heading page--heading-one">Heading one</h1>
+            <h1 className="page--heading page--heading-one">h1 - Heading one</h1>
         );
     }
 }
@@ -12,7 +12,7 @@ class HeadingOne extends Component {
 class HeadingTwo extends Component {
     render(){
         return(
-            <h2 className="page--heading page--heading-two">Heading two</h2>
+            <h2 className="page--heading page--heading-two">h2 - Heading two</h2>
         );
     }
 }
@@ -20,7 +20,7 @@ class HeadingTwo extends Component {
 class HeadingThree extends Component {
     render(){
         return(
-            <h3 className="page--heading page--heading-three">Heading Three</h3>
+            <h3 className="page--heading page--heading-three">h3 - Heading three</h3>
         );
     }
 }
@@ -28,7 +28,7 @@ class HeadingThree extends Component {
 class HeadingFour extends Component {
     render(){
         return(
-            <h4 className="page--heading page--heading-four">Heading Four</h4>
+            <h4 className="page--heading page--heading-four">h4 - Heading four</h4>
         );
     }
 }
@@ -36,7 +36,7 @@ class HeadingFour extends Component {
 class HeadingFive extends Component {
     render(){
         return(
-            <h5 className="page--heading page--heading-five">Heading Five</h5>
+            <h5 className="page--heading page--heading-five">h5 - Heading five</h5>
         );
     }
 }
@@ -44,7 +44,7 @@ class HeadingFive extends Component {
 class HeadingSix extends Component {
     render(){
         return(
-            <h6 className="page--heading page--heading-six">Heading Six</h6>
+            <h6 className="page--heading page--heading-six">h6 - Heading six</h6>
         );
     }
 }

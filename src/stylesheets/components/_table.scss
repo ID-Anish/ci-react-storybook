@@ -1,5 +1,8 @@
+@import '../base/_variables.scss';
+
 .table{width:100%;border-collapse:collapse;}
-.table--alternate-row{background-color:#eee;}
+.table--striped-row{background-color: $lightGreyColor;}
 .table--column-three{width:33.333%;}
-.table--column{padding:10px 15px;text-align:center;}
-.table--column-header{background-color:#ccc;}
+.table--column{padding:1rem 1.5rem;text-align:left;}
+.table--row-divider{border-bottom: $border;}
+.table--column-header{font-family: $headingFont; border-bottom-width: .2rem}
