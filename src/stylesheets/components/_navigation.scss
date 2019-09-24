@@ -1,0 +1,45 @@
+@import '../base/_variables.scss';
+
+//primary nav
+.navbar{
+    padding: 1rem;
+    font-family: $AvenirNormal;
+    background-color: $defaultColor;
+    border-radius: $borderRadius;
+    overflow: hidden;
+}
+.navbar--item{
+    float: left;
+    list-style-type: none;
+}
+.navbar--item-link{
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    color: $whiteColor;
+    text-decoration: none;
+    transition: $transitionAll;
+    &:hover, &.is-active{
+        background-color: $primaryColor;
+        border-radius: $borderRadius;
+    }
+}
+
+//secondary nav
+.nav{
+    font-family: $AvenirMedium;
+    font-size: 1.6rem;
+}
+.nav--item{
+    float: left;
+    margin-right: 2.5rem;
+    list-style-type: none;
+}
+.nav--item-link{
+    display: inline-block;
+    color: $bodyTextColor;
+    text-decoration: none;
+    transition: $transitionAll;
+    &:hover, &.is-active{
+        color: $linkColor;
+    }
+}

@@ -1,0 +1,35 @@
+@import '_fonts.scss';
+
+//common font variables
+$bodyFont: "Work Sans";
+$AvenirNormal: "Avenir Next Normal";
+$AvenirMedium: "Avenir Next";
+$AvenirBold: "Avenir Next Bold";
+$headingFont: $AvenirMedium;
+$buttonFont: $AvenirMedium;
+$buttonFontNormal: $AvenirNormal;
+
+//common color variables
+$whiteColor: #fff;
+$lightGreyColor: #eee;
+$darkGreyColor: #aaa;
+$defaultColor: #1f3557;
+$primaryColor: #E66B00;
+$secondaryColor: #eee;
+$bodyTextColor: #333;
+$linkColor: #BD5800;
+
+//alert
+$alertColor: $whiteColor;
+$successBackColor: #3A8340;
+$warningBackColor: #A86500;
+$errorBackColor: #E31B0D;
+
+//border
+$border: .1rem solid $lightGreyColor;
+$borderRadius: .4rem;
+
+//trnaisition & animations
+$transitionAll: all .3s ease;
+
+
