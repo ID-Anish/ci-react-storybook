@@ -6,7 +6,7 @@
     margin-bottom: 1rem;
     border: 1px solid transparent;
     border-radius: $borderRadius;
-    font-family: $AvenirNormal;
+    font-family: $primaryFontNormal;
     font-size: 1.5rem;
     color: $alertColor;
     a{
@@ -30,7 +30,7 @@
 }
 
 .alert--text{
-    font-family: $AvenirMedium;
+    font-family: $primaryFontMedium;
     font-size: 1.6rem;
     &-success{
         color: $successTextColor;

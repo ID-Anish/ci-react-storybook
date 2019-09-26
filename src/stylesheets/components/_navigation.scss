@@ -3,7 +3,7 @@
 //primary nav
 .navbar{
     padding: 1rem;
-    font-family: $AvenirNormal;
+    font-family: $primaryFontNormal;
     background-color: $defaultColor;
     border-radius: $borderRadius;
     overflow: hidden;
@@ -26,7 +26,7 @@
 
 //secondary nav
 .nav{
-    font-family: $AvenirMedium;
+    font-family: $primaryFontMedium;
     font-size: 1.6rem;
 }
 .nav--item{

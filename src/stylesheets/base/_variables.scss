@@ -1,13 +1,14 @@
 @import '_fonts.scss';
 
 //common font variables
-$bodyFont: "Work Sans";
-$AvenirNormal: "Avenir Next Normal";
-$AvenirMedium: "Avenir Next";
-$AvenirBold: "Avenir Next Bold";
-$headingFont: $AvenirMedium;
-$buttonFont: $AvenirNormal;
-$buttonFontNormal: $AvenirNormal;
+$defaultFont: "Work Sans";
+$primaryFontNormal: "Avenir Next Normal";
+$primaryFontMedium: "Avenir Next";
+$primaryFontBold: "Avenir Next Bold";
+$bodyFont: $defaultFont;
+$headingFont: $primaryFontMedium;
+$buttonFont: $primaryFontNormal;
+$buttonFontNormal: $primaryFontNormal;
 
 //common color variables
 $whiteColor: #fff;
