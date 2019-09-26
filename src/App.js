@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import { HeadingOne, HeadingTwo, HeadingThree, HeadingFour, HeadingFive, HeadingSix } from './components/heading';
 import { TableNormal, TableAlternateRowColor } from './components/tableElement';
 import { DefaultButton, PrimaryButton, SecondaryButton, LinkButton } from './components/button';
-import { AlertSuccess, AlertWarning, AlertError } from './components/alert';
+import { AlertSuccess, AlertWarning, AlertError, AlertSuccessText, AlertWarningText, AlertErrorText } from './components/alert';
 import { PrimaryNavigation, SecondaryNavigation } from './components/navigation';
+import { BadgeDefault, BadgePrimary, BadgeError, BadgeWarning, BadgeSuccess } from './components/badge';
+import { PagingNav, PagingShowmore } from './components/paging';
 
 
 class App extends Component {
@@ -46,6 +48,12 @@ class App extends Component {
           <AlertSuccess />
           <AlertWarning />
           <AlertError />
+
+          <div className="box mt-2">
+            <AlertSuccessText />
+            <AlertWarningText />
+            <AlertErrorText />
+          </div>
         </div>
 
         {/*****Navbar*****/}
@@ -55,7 +63,23 @@ class App extends Component {
           <SecondaryNavigation />
         </div>
 
-        {/*****Navbar*****/}
+        {/*****Badge*****/}
+        <div className="box mb-10">
+          <h2 className="page--heading-uppercase page--heading-grey">Badge styling</h2>
+          <BadgeDefault />
+          <BadgePrimary />
+          <BadgeError />
+          <BadgeWarning />
+          <BadgeSuccess />
+        </div>
+
+        {/*****Pagination*****/}
+        <div className="box mb-10">
+          <h2 className="page--heading-uppercase page--heading-grey">Paging styling</h2>
+          <PagingNav />
+          <PagingShowmore />
+          
+        </div>
 
 
 

@@ -1,0 +1,43 @@
+@import '../base/_variables.scss';
+
+.paging{
+    &--item{
+        float: left;
+        list-style-type: none;
+        &-link{
+            position: relative;
+            display: inline-block;
+            padding: .5rem 1.25rem;
+            line-height: 1.25;
+            color: $defaultColor;
+            text-decoration: none;
+            border-radius: $borderRadius;
+            transition: $transitionAll;
+            &:hover{
+                background-color: $lightGreyColor;
+            }
+            &.is-active{
+                color: $whiteColor;
+                background-color: $primaryColor;
+                &:hover{background-color: $primaryColor;}
+            }
+            &.is-disabled{
+                opacity: .65;
+                cursor: default;
+                &:hover{background: none;}
+            }
+            
+        }
+        &-btn{
+            font-weight: 500;
+        }
+    }
+}
+
+.paging--showmore{
+    padding: 1rem 3rem;
+    background-color: $defaultColor;
+    color: $whiteColor;
+    border-radius: 2.5rem;
+    &:hover{background-color: darken($defaultColor, 8%);}
+}

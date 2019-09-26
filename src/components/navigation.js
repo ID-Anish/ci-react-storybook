@@ -5,7 +5,7 @@ import '../stylesheets/components/_navigation.scss';
 class PrimaryNavigation extends Component{
     render(){
         return(
-            <ul className="navbar box m-0 p-0">
+            <ul className="navbar box m-0">
                 <li className="navbar--item">
                    <a href="!#" className="navbar--item-link">Menu one</a> 
                 </li>

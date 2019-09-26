@@ -1,0 +1,32 @@
+@import '../base/_variables.scss';
+
+.badge{
+    color: $whiteColor;
+    display: inline-block;
+    padding: .5rem 1.2rem;
+    font-size: 1rem;
+    text-align: center;
+    font-family: $AvenirMedium;
+    line-height: 1;
+    white-space: nowrap;
+    border-radius: 1.2rem;
+    text-transform: uppercase;
+    vertical-align: baseline;
+
+    &--default{
+        background-color: $defaultColor;
+    }
+    &--primary{
+        background-color: $primaryColor;
+    }
+    &--error{
+        background-color: $errorBackColor;
+    }
+    &--warning{
+        background-color: $warningBackColor;
+    }
+    &--success{
+        background-color: $successBackColor;
+    }
+}
+

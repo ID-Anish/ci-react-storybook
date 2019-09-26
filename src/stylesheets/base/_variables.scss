@@ -6,7 +6,7 @@ $AvenirNormal: "Avenir Next Normal";
 $AvenirMedium: "Avenir Next";
 $AvenirBold: "Avenir Next Bold";
 $headingFont: $AvenirMedium;
-$buttonFont: $AvenirMedium;
+$buttonFont: $AvenirNormal;
 $buttonFontNormal: $AvenirNormal;
 
 //common color variables
@@ -24,6 +24,9 @@ $alertColor: $whiteColor;
 $successBackColor: #3A8340;
 $warningBackColor: #A86500;
 $errorBackColor: #E31B0D;
+$successTextColor: $successBackColor;
+$warningTextColor: $warningBackColor;
+$errorTextColor: $errorBackColor;
 
 //border
 $border: .1rem solid $lightGreyColor;
@@ -31,5 +34,8 @@ $borderRadius: .4rem;
 
 //trnaisition & animations
 $transitionAll: all .3s ease;
+
+//spacing
+$spacer: 1rem;
 
 
