@@ -28,10 +28,14 @@ $errorBackColor: #E31B0D;
 $successTextColor: $successBackColor;
 $warningTextColor: $warningBackColor;
 $errorTextColor: $errorBackColor;
+$errorBorderColor: $errorBackColor;
+$successBorderColor: $successBackColor;
+$warningBorderColor: $warningBackColor;
 
 //border
 $border: .1rem solid $lightGreyColor;
 $borderRadius: .4rem;
+$formControlBorder: .1rem solid lighten($darkGreyColor, 18%);
 
 //trnaisition & animations
 $transitionAll: all .3s ease;
@@ -39,4 +43,5 @@ $transitionAll: all .3s ease;
 //spacing
 $spacer: 1rem;
 
-
+//focus for accessibility
+$elementFocus: 2px dotted $bodyTextColor;;

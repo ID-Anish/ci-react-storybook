@@ -1,7 +1,8 @@
 //*****common*****
 html{font-size:10px;}
-body{font-family:$bodyFont;font-size:1.5rem;}
+body{font-family:$bodyFont;font-size:1.5rem;color:$bodyTextColor;}
 .box{display: inline-block;width: 100%;box-sizing: border-box;}
+.box-inline{display: inline-block;box-sizing: border-box;}
 
 //***Spacing***
   //margin

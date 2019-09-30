@@ -18,6 +18,7 @@
     color: $whiteColor;
     text-decoration: none;
     transition: $transitionAll;
+    &:focus{outline:$elementFocus;outline-color: $lightGreyColor;}
     &:hover, &.is-active{
         background-color: $primaryColor;
         border-radius: $borderRadius;
@@ -39,6 +40,7 @@
     color: $bodyTextColor;
     text-decoration: none;
     transition: $transitionAll;
+    &:focus{outline:$elementFocus;}
     &:hover, &.is-active{
         color: $linkColor;
     }

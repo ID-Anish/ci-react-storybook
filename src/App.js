@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import { HeadingOne, HeadingTwo, HeadingThree, HeadingFour, HeadingFive, HeadingSix } from './components/heading';
 import { TableNormal, TableAlternateRowColor } from './components/tableElement';
 import { DefaultButton, PrimaryButton, SecondaryButton, LinkButton } from './components/button';
@@ -6,6 +7,18 @@ import { AlertSuccess, AlertWarning, AlertError, AlertSuccessText, AlertWarningT
 import { PrimaryNavigation, SecondaryNavigation } from './components/navigation';
 import { BadgeDefault, BadgePrimary, BadgeError, BadgeWarning, BadgeSuccess } from './components/badge';
 import { PagingNav, PagingShowmore } from './components/paging';
+import { Breadcrumb, BreadcrumbRound } from './components/breadcrumb';
+import { InputText, InputPswd, InputTextArea, SelectBox } from './components/formElements';
+
+
+//fontawesome icons
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faThumbsUp, faSpinner} from '@fortawesome/free-solid-svg-icons'
+  //fontawesome icon library
+  library.add(faThumbsUp, faSpinner)
+
+
 
 
 class App extends Component {
@@ -63,6 +76,20 @@ class App extends Component {
           <SecondaryNavigation />
         </div>
 
+        {/*****Breadcrumb*****/}
+        <div className="box mb-10">
+            <h2 className="page--heading-uppercase page--heading-grey">Breadcrumb styling</h2>
+            <Breadcrumb />
+            <BreadcrumbRound />
+          </div>
+
+        {/*****Pagination*****/}
+        <div className="box mb-10">
+          <h2 className="page--heading-uppercase page--heading-grey">Paging styling</h2>
+          <PagingNav />
+          <PagingShowmore />
+        </div>  
+
         {/*****Badge*****/}
         <div className="box mb-10">
           <h2 className="page--heading-uppercase page--heading-grey">Badge styling</h2>
@@ -73,14 +100,51 @@ class App extends Component {
           <BadgeSuccess />
         </div>
 
-        {/*****Pagination*****/}
+        {/*****Icons*****/}
         <div className="box mb-10">
-          <h2 className="page--heading-uppercase page--heading-grey">Paging styling</h2>
-          <PagingNav />
-          <PagingShowmore />
-          
-        </div>
+          <h2 className="page--heading-uppercase page--heading-grey">Icon examples</h2>
+          <div className="box mb-8">
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="thumbs-up" size="3x" /></i>
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="thumbs-up" size="2x" /></i>
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="thumbs-up" size="lg" /></i>
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="thumbs-up" size="md" /></i>
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="thumbs-up" size="sm" /></i>
+            <i className="box-inline"><FontAwesomeIcon icon="thumbs-up" size="xs" /></i>
+          </div>
 
+          <div className="box">
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="spinner" size="3x" spin /></i>
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="spinner" size="2x" spin /></i>
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="spinner" size="lg" spin /></i>
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="spinner" size="md" spin /></i>
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="spinner" size="sm" spin /></i>
+            <i className="box-inline"><FontAwesomeIcon icon="spinner" size="xs" spin /></i>
+          </div>
+        </div>
+        
+        {/*****Form Elements*****/}
+        <div className="box mb-10">
+          <h2 className="page--heading-uppercase page--heading-grey">Form elements styling</h2>
+          <form className="form--container">
+            <div className="form--row box mb-4">
+              <InputText />
+            </div>
+
+            <div className="form--row box mb-4">
+              <InputPswd />
+            </div>
+          
+            <div className="form--row box mb-4">
+              <InputTextArea />
+            </div>
+
+            <div className="form--row box mb-4">
+              <SelectBox />
+            </div>
+          
+          </form>
+        </div>
+        
 
 
       </div>

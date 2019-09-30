@@ -45,7 +45,7 @@ class TableNormal extends Component {
 class TableAlternateRowColor extends Component {
     render() {
         return(
-            <table className="table mb-5">
+            <table className="table">
                 <thead>
                     <tr>
                         <th scope="col" className="table--column table--column-header table--column-three table--striped-row">Head one</th>

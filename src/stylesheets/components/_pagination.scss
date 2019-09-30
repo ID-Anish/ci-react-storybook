@@ -13,6 +13,7 @@
             text-decoration: none;
             border-radius: $borderRadius;
             transition: $transitionAll;
+            &:focus{outline:$elementFocus;}
             &:hover{
                 background-color: $lightGreyColor;
             }
@@ -39,5 +40,6 @@
     background-color: $defaultColor;
     color: $whiteColor;
     border-radius: 2.5rem;
+    &:focus{outline:$elementFocus;}
     &:hover{background-color: darken($defaultColor, 8%);}
 }
