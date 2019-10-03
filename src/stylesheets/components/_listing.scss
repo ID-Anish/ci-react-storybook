@@ -1,0 +1,7 @@
+@import '../base/_variables.scss';
+
+.unordered-list{
+    &--item{
+        list-style-type: none;
+    }
+}

@@ -1,0 +1,69 @@
+@import '../base/_variables.scss';
+
+.breadcrumb{
+    font-family: $primaryFontNormal;
+    &--item{
+        margin-right: 1rem;
+        padding-right: 1.5rem;
+        position: relative;
+        float: left;
+        font-family: $primaryFontMedium;
+        list-style-type: none;
+        &::after{
+            position: absolute;
+            content: '/';
+            top:0;
+            right: -.05rem;
+            font-size: 1.8rem;
+        }
+        &:last-child{
+            margin-right: 0;
+            padding-right: 0;
+            &::after{display: none;}
+        }
+    }
+    &--item-link{
+        font-size: 1.6rem;
+        color: $defaultColor;
+        text-decoration: none;
+        transition: $transitionAll;
+        &:focus{outline:$elementFocus;}
+        &:hover{text-decoration: underline;}
+        &.is-active{
+            color: $primaryColor;
+            &:hover{text-decoration: none;cursor: default;}
+        }
+    }
+}
+
+.breadcrumb-round{
+    font-family: $primaryFontMedium;
+    &--item{
+        margin-right: -1.5rem;
+        float: left;
+        list-style-type: none;
+        &:last-child{
+            margin-right: 0;
+            padding-right: 0;
+        }
+    }
+    &--item-link{
+        padding: .75rem 3.5rem;
+        display: inline-block;
+        text-align: center;
+        font-size: 1.4rem;
+        background-color: $lightGreyColor;
+        color: $bodyTextColor;
+        text-decoration: none;
+        transition: $transitionAll;
+        border-left: .3rem solid $whiteColor;
+        border-radius: 2.5rem;
+        &:focus{outline:$elementFocus;}
+        &:hover{background-color: $defaultColor;color: $whiteColor;}
+        &.is-active{
+            background-color: $primaryColor;
+            color: $whiteColor;
+            &:hover{background-color: $primaryColor;cursor: default;}
+        }
+    }
+}

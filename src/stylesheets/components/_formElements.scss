@@ -1,0 +1,25 @@
+@import '../base/_variables.scss';
+
+.form--label{
+    font-size: 1.5rem;
+}
+.form--control{
+    min-width: 100%;
+    padding:.75rem;
+    box-sizing: border-box;
+    border: $formControlBorder;
+    border-radius: $borderRadius;
+    outline: none;
+    color:lighten($bodyTextColor, 20%);
+    &.is-invalid{border-color: $errorBorderColor;}
+    &.is-valid{border-color: $successBorderColor;}
+    &-textarea{height: 8rem;resize: none;font-family: $defaultFont; font-size: 1.4rem;}
+    &:focus{outline:$elementFocus;}
+
+    &-checkbox, &-radio{
+        float: left;
+        margin: .3rem .75rem 0 0;
+        &:focus{outline:$elementFocus;}
+        .is-disabled{opacity:.5;pointer-events:none;}
+    }
+}

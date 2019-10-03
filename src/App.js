@@ -8,8 +8,8 @@ import { PrimaryNavigation, SecondaryNavigation } from './components/navigation'
 import { BadgeDefault, BadgePrimary, BadgeError, BadgeWarning, BadgeSuccess } from './components/badge';
 import { PagingNav, PagingShowmore } from './components/paging';
 import { Breadcrumb, BreadcrumbRound } from './components/breadcrumb';
-import { InputText, InputPswd, InputTextArea, SelectBox } from './components/formElements';
-
+import { InputText, InputPswd, InputTextArea, SelectBox, InputCheckbox, InputRadio } from './components/formElements';
+import { PickDate } from './components/datepicker';
 
 //fontawesome icons
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -51,7 +51,7 @@ class App extends Component {
           <HeadingTwo />
           <HeadingThree />
           <HeadingFour />
-          <HeadingFive />
+          <HeadingFive />             
           <HeadingSix />
         </div>
 
@@ -126,20 +126,50 @@ class App extends Component {
         <div className="box mb-10">
           <h2 className="page--heading-uppercase page--heading-grey">Form elements styling</h2>
           <form className="form--container">
+            {/*input text*/}
             <div className="form--row box mb-4">
               <InputText />
             </div>
 
+            {/*input password*/}
             <div className="form--row box mb-4">
               <InputPswd />
             </div>
           
+            {/*input textarea*/}
             <div className="form--row box mb-4">
               <InputTextArea />
             </div>
 
+            {/*selectbox*/}
             <div className="form--row box mb-4">
               <SelectBox />
+            </div>
+
+            {/*input checkbox*/}
+            <div className="form--row box mb-4">
+              <h3 className="mb-2">Checkbox</h3>
+              <ul className="box unordered-list m-0 p-0">
+                <li className="unordered-list--item mb-2"><InputCheckbox /></li>
+                <li className="unordered-list--item mb-2"><InputCheckbox /></li>
+                <li className="unordered-list--item"><InputCheckbox /></li>
+              </ul>
+            </div>
+
+            {/*input radio*/}
+            <div className="form--row box mb-4">
+              <h3 className="mb-2">Radio</h3>
+              <ul className="box unordered-list m-0 p-0">
+                <li className="unordered-list--item mb-2"><InputRadio /></li>
+                <li className="unordered-list--item mb-2"><InputRadio /></li>
+                <li className="unordered-list--item"><InputRadio /></li>
+              </ul>
+            </div>
+
+            {/*input datepicker*/}
+            <div className="form--row box mb-4">
+              <h3 className="mb-2">Datepicker</h3>
+              <PickDate />
             </div>
           
           </form>
