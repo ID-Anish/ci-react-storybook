@@ -5,23 +5,25 @@ import '../stylesheets/components/_navigation.scss';
 class PrimaryNavigation extends Component{
     render(){
         return(
-            <ul className="navbar box m-0">
-                <li className="navbar--item">
-                   <a href="!#" className="navbar--item-link">Menu one</a> 
-                </li>
-                <li className="navbar--item">
-                   <a href="!#" className="navbar--item-link is-active">Menu two</a> 
-                </li>
-                <li className="navbar--item">
-                   <a href="!#" className="navbar--item-link">Menu three</a> 
-                </li>
-                <li className="navbar--item">
-                   <a href="!#" className="navbar--item-link">Menu four</a> 
-                </li>
-                <li className="navbar--item">
-                   <a href="!#" className="navbar--item-link">Menu five</a> 
-                </li>
-            </ul>
+            <nav className="box">
+               <ul className="navbar box m-0">
+                  <li className="navbar--item">
+                     <a href="!#" className="navbar--item-link">Menu one</a> 
+                  </li>
+                  <li className="navbar--item">
+                     <a href="!#" className="navbar--item-link is-active">Menu two</a> 
+                  </li>
+                  <li className="navbar--item">
+                     <a href="!#" className="navbar--item-link">Menu three</a> 
+                  </li>
+                  <li className="navbar--item">
+                     <a href="!#" className="navbar--item-link">Menu four</a> 
+                  </li>
+                  <li className="navbar--item">
+                     <a href="!#" className="navbar--item-link">Menu five</a> 
+                  </li>
+               </ul>
+            </nav>
         );
     }
 }
@@ -31,23 +33,25 @@ class PrimaryNavigation extends Component{
 class SecondaryNavigation extends Component{
     render(){
         return(
-            <ul className="nav box mt-5 p-0">
-                <li className="nav--item">
-                   <a href="!#" className="nav--item-link">Menu one</a> 
-                </li>
-                <li className="nav--item">
-                   <a href="!#" className="nav--item-link is-active">Menu two</a> 
-                </li>
-                <li className="nav--item">
-                   <a href="!#" className="nav--item-link">Menu three</a> 
-                </li>
-                <li className="nav--item">
-                   <a href="!#" className="nav--item-link">Menu four</a> 
-                </li>
-                <li className="nav--item">
-                   <a href="!#" className="nav--item-link">Menu five</a> 
-                </li>
-            </ul>
+            <nav className="box mt-5">
+               <ul className="nav box p-0 m-0">
+                  <li className="nav--item">
+                     <a href="!#" className="nav--item-link">Menu one</a> 
+                  </li>
+                  <li className="nav--item">
+                     <a href="!#" className="nav--item-link is-active">Menu two</a> 
+                  </li>
+                  <li className="nav--item">
+                     <a href="!#" className="nav--item-link">Menu three</a> 
+                  </li>
+                  <li className="nav--item">
+                     <a href="!#" className="nav--item-link">Menu four</a> 
+                  </li>
+                  <li className="nav--item">
+                     <a href="!#" className="nav--item-link">Menu five</a> 
+                  </li>
+               </ul>
+            </nav>
         );
     }
 }
