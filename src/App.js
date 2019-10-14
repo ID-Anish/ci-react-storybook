@@ -14,9 +14,9 @@ import { PickDate } from './components/datepicker';
 //fontawesome icons
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faThumbsUp, faSpinner} from '@fortawesome/free-solid-svg-icons'
+import { faThumbsUp, faSpinner, faUniversalAccess, faCode, faCog} from '@fortawesome/free-solid-svg-icons'
   //fontawesome icon library
-  library.add(faThumbsUp, faSpinner)
+  library.add(faThumbsUp, faSpinner, faUniversalAccess, faCode, faCog)
 
 
 
@@ -78,10 +78,10 @@ class App extends Component {
 
         {/*****Breadcrumb*****/}
         <div className="box mb-10">
-            <h2 className="page--heading-uppercase page--heading-grey">Breadcrumb styling</h2>
-            <Breadcrumb />
-            <BreadcrumbRound />
-          </div>
+          <h2 className="page--heading-uppercase page--heading-grey">Breadcrumb styling</h2>
+          <Breadcrumb />
+          <BreadcrumbRound />
+        </div>
 
         {/*****Pagination*****/}
         <div className="box mb-10">
@@ -111,14 +111,41 @@ class App extends Component {
             <i className="box-inline mr-5"><FontAwesomeIcon icon="thumbs-up" size="sm" /></i>
             <i className="box-inline"><FontAwesomeIcon icon="thumbs-up" size="xs" /></i>
           </div>
-
-          <div className="box">
+          
+          <div className="box mb-8">
             <i className="box-inline mr-5"><FontAwesomeIcon icon="spinner" size="3x" spin /></i>
             <i className="box-inline mr-5"><FontAwesomeIcon icon="spinner" size="2x" spin /></i>
             <i className="box-inline mr-5"><FontAwesomeIcon icon="spinner" size="lg" spin /></i>
             <i className="box-inline mr-5"><FontAwesomeIcon icon="spinner" size="md" spin /></i>
             <i className="box-inline mr-5"><FontAwesomeIcon icon="spinner" size="sm" spin /></i>
             <i className="box-inline"><FontAwesomeIcon icon="spinner" size="xs" spin /></i>
+          </div>
+
+          <div className="box mb-8">
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="universal-access" size="3x" /></i>
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="universal-access" size="2x" /></i>
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="universal-access" size="lg" /></i>
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="universal-access" size="md" /></i>
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="universal-access" size="sm" /></i>
+            <i className="box-inline"><FontAwesomeIcon icon="universal-access" size="xs" /></i>
+          </div>
+
+          <div className="box mb-8">
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="code" size="3x" /></i>
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="code" size="2x" /></i>
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="code" size="lg" /></i>
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="code" size="md" /></i>
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="code" size="sm" /></i>
+            <i className="box-inline"><FontAwesomeIcon icon="code" size="xs" /></i>
+          </div>
+          
+          <div className="box">
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="cog" size="3x" /></i>
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="cog" size="2x" /></i>
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="cog" size="lg" /></i>
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="cog" size="md" /></i>
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="cog" size="sm" /></i>
+            <i className="box-inline"><FontAwesomeIcon icon="cog" size="xs" /></i>
           </div>
         </div>
         
