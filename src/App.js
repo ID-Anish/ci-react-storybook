@@ -19,8 +19,6 @@ import { faThumbsUp, faSpinner, faUniversalAccess, faCode, faCog} from '@fortawe
   library.add(faThumbsUp, faSpinner, faUniversalAccess, faCode, faCog)
 
 
-
-
 class App extends Component {
   render(){
     return(
