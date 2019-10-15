@@ -1,4 +1,4 @@
-<h2>1. Install node</h2>
+<h2>1. Install node package manager</h2>
 <h2>2. Setting up a React Environment</h2>
 <ol> 
   <li>npm install -g create-react-app</li>
