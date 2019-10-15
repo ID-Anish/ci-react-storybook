@@ -39,7 +39,7 @@
   </li>
   <li><strong>Use icons:</strong>
     <ol type="a"> 
-      <li><code><FontAwesomeIcon icon="thumbs-up" size="3x" /></code></li>
+      <li><pre><FontAwesomeIcon icon="thumbs-up" size="3x" /></pre></li>
     </ol>
   </li>
 </ol>
