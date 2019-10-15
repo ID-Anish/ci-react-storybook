@@ -10,13 +10,7 @@
 <p>- npm start</p>
 
 
-<h3>4. Run the React Application</h3>
-<ol type="a"> 
-  <li>cd myfirstreact</li>
-  <li>npm start</li>
-</ol>
-
-<h3>5. React Plugins</h3>
+<h3>4. React Plugins</h3>
 <h4>Font Awesome icons:</h4>
 <ol> 
   <li><strong>Install below options:</strong>
