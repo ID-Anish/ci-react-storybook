@@ -1,4 +1,4 @@
-<h3>1. Install node package manager</h3>
+<h3>1. Download and install node package manager</h3>
 
 <h3>2. Set up a React Environment</h3>
 <ol type="a"> 
