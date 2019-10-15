@@ -16,6 +16,7 @@
   <li>npm start</li>
 </ol>
 
+<h3>5. React Plugins</h3>
 <h4>Font Awesome icons:</h4>
 <ol> 
   <li><strong>Install below options:</strong>
@@ -39,7 +40,7 @@
   </li>
   <li><strong>Use icons:</strong>
     <ol type="a"> 
-      <li><pre><FontAwesomeIcon icon="thumbs-up" size="3x" /></pre></li>
+      <li>FontAwesomeIcon icon="thumbs-up" size="3x"</li>
     </ol>
   </li>
 </ol>
