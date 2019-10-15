@@ -1,12 +1,19 @@
-<h2>Setting up a React Environment</h2>
+<h2>1. Install node</h2>
+<h2>2. Setting up a React Environment</h2>
 <ol> 
-  <li>C:\Users\Your Name>npm install -g create-react-app</li>
-  <li>C:\Users\Your Name>npx create-react-app myfirstreact</li>
+  <li>npm install -g create-react-app</li>
+  <li>npx create-react-app myfirstreact</li>
 </ol>
 
 
-<h2>Run the React Application</h2>
+<h2>3. Run the React Application</h2>
 <ol> 
-  <li>C:\Users\Your Name>cd myfirstreact</li>
-  <li>C:\Users\Your Name\myfirstreact>npm start</li>
+  <li>cd myfirstreact</li>
+  <li>npm start</li>
 </ol>
+
+
+<h3>React learning:</h3>
+<p>
+  <a href="https://www.youtube.com/watch?v=00kXjx9k3Os&list=PLN3n1USn4xlntqksY83W3997mmQPrUmqM&index=2">YouTube channel</a>
+</p>
