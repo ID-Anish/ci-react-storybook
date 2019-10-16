@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { HeadingOne, HeadingTwo, HeadingThree, HeadingFour, HeadingFive, HeadingSix } from './components/heading';
 import { TableNormal, TableAlternateRowColor } from './components/tableElement';
-import { DefaultButton, PrimaryButton, SecondaryButton, LinkButton } from './components/button';
+import { ButtonElement } from './components/button';
 import { AlertSuccess, AlertWarning, AlertError, AlertSuccessText, AlertWarningText, AlertErrorText } from './components/alert';
 import { PrimaryNavigation, SecondaryNavigation } from './components/navigation';
 import { BadgeDefault, BadgePrimary, BadgeError, BadgeWarning, BadgeSuccess } from './components/badge';
@@ -36,10 +36,10 @@ class App extends Component {
         {/*****Buttons*****/}
         <div className="box mb-10">
           <h2 className="page--heading-uppercase page--heading-grey">Button styling</h2>
-          <DefaultButton />
-          <PrimaryButton />
-          <SecondaryButton />
-          <LinkButton />
+          <ButtonElement btnType="button" styleName="btn--default mr-2">Default</ ButtonElement>
+          <ButtonElement btnType="submit" styleName="btn--primary mr-2">Primary</ ButtonElement>
+          <ButtonElement btnType="reset" styleName="btn--secondary mr-2">Secondary</ ButtonElement>
+          <ButtonElement btnType="button" styleName="btn--link">Link</ ButtonElement>
         </div>
 
         {/*****Headings*****/}
