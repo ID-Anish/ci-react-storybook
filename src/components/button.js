@@ -7,7 +7,7 @@ class ButtonElement extends Component{
     render() {
         return (
           <button type={this.props.btnType} className={classnames('btn', this.props.styleName)}>
-            {this.props.children}
+            {this.props.btnText}
           </button>
         );
       }

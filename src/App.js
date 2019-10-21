@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-import { HeadingOne, HeadingTwo, HeadingThree, HeadingFour, HeadingFive, HeadingSix } from './components/heading';
+import { HeadingElement } from './components/heading';
 import { TableNormal, TableAlternateRowColor } from './components/tableElement';
 import { ButtonElement } from './components/button';
-import { AlertSuccess, AlertWarning, AlertError, AlertSuccessText, AlertWarningText, AlertErrorText } from './components/alert';
+import { AlertElement, AlertElementText } from './components/alert';
 import { PrimaryNavigation, SecondaryNavigation } from './components/navigation';
-import { BadgeDefault, BadgePrimary, BadgeError, BadgeWarning, BadgeSuccess } from './components/badge';
+import { BadgeElement } from './components/badge';
 import { PagingNav, PagingShowmore } from './components/paging';
 import { Breadcrumb, BreadcrumbRound } from './components/breadcrumb';
 import { InputText, InputPswd, InputTextArea, SelectBox, InputCheckbox, InputRadio } from './components/formElements';
@@ -36,34 +36,34 @@ class App extends Component {
         {/*****Buttons*****/}
         <div className="box mb-10">
           <h2 className="page--heading-uppercase page--heading-grey">Button styling</h2>
-          <ButtonElement btnType="button" styleName="btn--default mr-2">Default</ ButtonElement>
-          <ButtonElement btnType="submit" styleName="btn--primary mr-2">Primary</ ButtonElement>
-          <ButtonElement btnType="reset" styleName="btn--secondary mr-2">Secondary</ ButtonElement>
-          <ButtonElement btnType="button" styleName="btn--link">Link</ ButtonElement>
+          <ButtonElement btnType="button" styleName="btn--default mr-2" btnText="Default" />
+          <ButtonElement btnType="submit" styleName="btn--primary mr-2" btnText="Primary" />
+          <ButtonElement btnType="reset" styleName="btn--secondary mr-2" btnText="Secondary" />
+          <ButtonElement btnType="button" styleName="btn--link" btnText="Link" />
         </div>
 
         {/*****Headings*****/}
         <div className="box mb-10">
           <h2 className="page--heading-uppercase page--heading-grey">Heading styling</h2>
-          <HeadingOne />
-          <HeadingTwo />
-          <HeadingThree />
-          <HeadingFour />
-          <HeadingFive />             
-          <HeadingSix />
+          <HeadingElement level="1" styleName="page--heading-one" headingText="h1 - Heading one" />
+          <HeadingElement level="2" styleName="page--heading-two" headingText="h2 - Heading two" />
+          <HeadingElement level="3" styleName="page--heading-three" headingText="h3 - Heading three" />
+          <HeadingElement level="4" styleName="page--heading-four" headingText="h4 - Heading four" />
+          <HeadingElement level="5" styleName="page--heading-five" headingText="h5 - Heading five" />
+          <HeadingElement level="6" styleName="page--heading-six mb-0" headingText="h6 - Heading six" />
         </div>
 
         {/*****Alert message*****/}
         <div className="box mb-10">
           <h2 className="page--heading-uppercase page--heading-grey">Alert message styling</h2>
-          <AlertSuccess />
-          <AlertWarning />
-          <AlertError />
+          <AlertElement alertType="success" styleName="alert--success" alertText="This is success message" />
+          <AlertElement alertType="warning" styleName="alert--warning" alertText="This is warning message" />
+          <AlertElement alertType="error" styleName="alert--error" alertText="This is error message" />
 
           <div className="box mt-2">
-            <AlertSuccessText />
-            <AlertWarningText />
-            <AlertErrorText />
+            <AlertElementText alertType="success" styleName="alert--text-success mb-1" alertText="This is success message" />
+            <AlertElementText alertType="warning" styleName="alert--text-warning mb-1" alertText="This is warning message" />
+            <AlertElementText alertType="error" styleName="alert--text-error" alertText="This is error message" />
           </div>
         </div>
 
@@ -91,11 +91,11 @@ class App extends Component {
         {/*****Badge*****/}
         <div className="box mb-10">
           <h2 className="page--heading-uppercase page--heading-grey">Badge styling</h2>
-          <BadgeDefault />
-          <BadgePrimary />
-          <BadgeError />
-          <BadgeWarning />
-          <BadgeSuccess />
+          <BadgeElement badgetType="default" styleName="badge--default mr-1" badgeText="Default" />
+          <BadgeElement badgetType="primary" styleName="badge--primary mr-1" badgeText="Primary" />
+          <BadgeElement badgetType="error" styleName="badge--error mr-1" badgeText="Error" />
+          <BadgeElement badgetType="warning" styleName="badge--warning mr-1" badgeText="Warning" />
+          <BadgeElement badgetType="success" styleName="badge--success" badgeText="Success" />
         </div>
 
         {/*****Icons*****/}
