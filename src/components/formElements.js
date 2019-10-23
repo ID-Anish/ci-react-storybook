@@ -2,24 +2,18 @@ import React, { Component } from 'react';
 import '../stylesheets/components/_formElements.scss';
 import '../stylesheets/components/_listing.scss';
 
-class InputText extends Component{
+class InputLabel extends Component{
     render(){
         return(
-            <label className="box">
-                <span className="form--label box mb-1">Username</span>
-                <input id="username" type="text" className="form--control form--input-text" />
-            </label>
+            <label className="box form--label box mb-1" for={this.props.labelFor}>{this.props.labelText}</label>
         );
     }
 }
 
-class InputPswd extends Component{
+class InputField extends Component{
     render(){
         return(
-            <label className="box">
-                <span className="form--label box mb-1">Password</span>
-                <input id="username" type="password" className="form--control form--input-text" />
-            </label>
+            <input id={this.props.inputID} type={this.props.inputType} className="form--control form--input-text" />
         );
     }
 }
@@ -27,10 +21,7 @@ class InputPswd extends Component{
 class InputTextArea extends Component{
     render(){
         return(
-            <label className="box">
-                <span className="form--label box mb-1">Address</span>
-                <textarea className="form--control form--control-textarea"></textarea>
-            </label>
+            <textarea id={this.props.textID} className="form--control form--control-textarea"></textarea>
         );
     }
 }
@@ -38,14 +29,11 @@ class InputTextArea extends Component{
 class SelectBox extends Component{
     render(){
         return(
-            <label className="box">
-                <span className="form--label box mb-1">Country</span>
-                <select className="form--control">
-                    <option>USA</option>
-                    <option>UK</option>
-                    <option>Sweden</option>
-                </select>
-            </label>
+            <select id={this.props.selectID} className="form--control">
+                <option>USA</option>
+                <option>UK</option>
+                <option>Sweden</option>
+            </select>
         );
     }
 }
@@ -54,7 +42,7 @@ class InputCheckbox extends Component{
     render(){
         return(
             <label className="box-inline">
-                <input type="checkbox" name="item-list-checkbox" className="form--control-checkbox" /> Item one
+                <input type="checkbox" name={this.props.checkboxName} className="form--control-checkbox" /> {this.props.labelText}
             </label>
         );
     }
@@ -64,11 +52,11 @@ class InputRadio extends Component{
     render(){
         return(
             <label className="box-inline">
-                <input type="radio" name="item-list-radio" className="form--control-checkbox" /> Item one
+                <input type="radio" name={this.props.radioName} className="form--control-checkbox" />  {this.props.labelText}
             </label>
         );
     }
 }
 
 
-export { InputText, InputPswd, InputTextArea, SelectBox, InputCheckbox, InputRadio };
+export { InputLabel, InputField, InputTextArea, SelectBox, InputCheckbox, InputRadio };

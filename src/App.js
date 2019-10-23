@@ -1,5 +1,14 @@
 import React, { Component } from 'react';
 
+//router
+import Nav from './nav';
+import Home from './home';
+import About from './about';
+import Service from './service';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+
+
 import { HeadingElement } from './components/heading';
 import { TableNormal, TableAlternateRowColor } from './components/tableElement';
 import { ButtonElement } from './components/button';
@@ -8,7 +17,7 @@ import { PrimaryNavigation, SecondaryNavigation } from './components/navigation'
 import { BadgeElement } from './components/badge';
 import { PagingNav, PagingShowmore } from './components/paging';
 import { Breadcrumb, BreadcrumbRound } from './components/breadcrumb';
-import { InputText, InputPswd, InputTextArea, SelectBox, InputCheckbox, InputRadio } from './components/formElements';
+import { InputLabel, InputField, InputTextArea, SelectBox, InputCheckbox, InputRadio } from './components/formElements';
 import { PickDate } from './components/datepicker';
 
 //fontawesome icons
@@ -73,6 +82,30 @@ class App extends Component {
           <PrimaryNavigation />
           <SecondaryNavigation />
         </div>
+
+        {/*****Router navigation*****/}
+        <div className="box mb-10">
+          <h2 className="page--heading-uppercase page--heading-grey">Router Example</h2>
+          <Router>
+            <Nav />
+
+            <Switch>
+              <Route path="/" exact Component={Home}>
+                <Home />
+              </Route>
+
+              <Route path="/about" Component={About}>
+                <About />
+              </Route>
+
+              <Route path="/service" Component={Service}>
+                <Service />
+              </Route>
+            </Switch>
+
+          </Router>
+        </div>
+        
 
         {/*****Breadcrumb*****/}
         <div className="box mb-10">
@@ -153,31 +186,35 @@ class App extends Component {
           <form className="form--container">
             {/*input text*/}
             <div className="form--row box mb-4">
-              <InputText />
+              <InputLabel labelText="Username" labelFor="userName" />
+              <InputField inputType="text" inputID="userName" />
             </div>
 
             {/*input password*/}
             <div className="form--row box mb-4">
-              <InputPswd />
+              <InputLabel labelText="Password" labelFor="userPswd" />
+              <InputField inputType="password" inputID="userPswd" />
             </div>
           
             {/*input textarea*/}
             <div className="form--row box mb-4">
-              <InputTextArea />
+              <InputLabel labelText="Address" labelFor="userAdd" />
+              <InputTextArea textID="userAdd" />
             </div>
 
             {/*selectbox*/}
             <div className="form--row box mb-4">
-              <SelectBox />
+              <InputLabel labelText="Country" labelFor="userCountry" />
+              <SelectBox selectID="userCountry" />
             </div>
 
             {/*input checkbox*/}
             <div className="form--row box mb-4">
               <h3 className="mb-2">Checkbox</h3>
               <ul className="box unordered-list m-0 p-0">
-                <li className="unordered-list--item mb-2"><InputCheckbox /></li>
-                <li className="unordered-list--item mb-2"><InputCheckbox /></li>
-                <li className="unordered-list--item"><InputCheckbox /></li>
+                <li className="unordered-list--item mb-2"><InputCheckbox checkboxName="item-list-checkbox1" labelText="Item one" /></li>
+                <li className="unordered-list--item mb-2"><InputCheckbox checkboxName="item-list-checkbox2" labelText="Item two" /></li>
+                <li className="unordered-list--item"><InputCheckbox checkboxName="item-list-checkbox3" labelText="Item three" /></li>
               </ul>
             </div>
 
@@ -185,14 +222,14 @@ class App extends Component {
             <div className="form--row box mb-4">
               <h3 className="mb-2">Radio</h3>
               <ul className="box unordered-list m-0 p-0">
-                <li className="unordered-list--item mb-2"><InputRadio /></li>
-                <li className="unordered-list--item mb-2"><InputRadio /></li>
-                <li className="unordered-list--item"><InputRadio /></li>
+                <li className="unordered-list--item mb-2"><InputRadio radioName="item-list-radio" labelText="Item one" /></li>
+                <li className="unordered-list--item mb-2"><InputRadio radioName="item-list-radio" labelText="Item two" /></li>
+                <li className="unordered-list--item"><InputRadio radioName="item-list-radio" labelText="Item three" /></li>
               </ul>
             </div>
 
             {/*input datepicker*/}
-            <div className="form--row box mb-4">
+            <div className="form--row box">
               <h3 className="mb-2">Datepicker</h3>
               <PickDate />
             </div>
@@ -200,8 +237,6 @@ class App extends Component {
           </form>
         </div>
         
-
-
       </div>
     );
   }
