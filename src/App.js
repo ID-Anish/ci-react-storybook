@@ -118,7 +118,7 @@ class App extends Component {
         <div className="box mb-10">
           <h2 className="page--heading-uppercase page--heading-grey">Paging styling</h2>
           <PagingNav />
-          <PagingShowmore />
+          <PagingShowmore pagingText="Show More" />
         </div>  
 
         {/*****Badge*****/}

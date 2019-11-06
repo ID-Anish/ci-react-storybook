@@ -20,7 +20,7 @@ class PagingNav extends Component{
 class PagingShowmore extends Component{
     render(){
         return(
-            <button className="btn paging--showmore mt-5">Show More</button>
+            <button className="btn paging--showmore mt-5">{this.props.pagingText}</button>
         );
     }
 }
