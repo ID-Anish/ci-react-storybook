@@ -39,8 +39,9 @@
   </li>
 </ol>
 
-
-
+<h3>5. Storybook setup</h3>
+<h4>Automatic setup:</h4>
+<p>npx -p @storybook/cli sb init --type react</p>
 
 
 <br />
