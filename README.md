@@ -43,6 +43,9 @@
 <h4>Automatic setup:</h4>
 <p>npx -p @storybook/cli sb init --type react</p>
 
+<h4>Run your Storybook:</h4>
+<p>npm run storybook</p>
+
 
 <br />
 <br />
