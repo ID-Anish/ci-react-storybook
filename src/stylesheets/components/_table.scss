@@ -3,6 +3,6 @@
 .table{width:100%;border-collapse:collapse;}
 .table--striped-row{background-color: $lightGreyColor;}
 .table--column-three{width:33.333%;}
-.table--column{padding:1rem 1.5rem;text-align:left;}
+.table--column{padding:1rem 1.5rem;text-align:left;border:none;}
 .table--row-divider{border-bottom: $border;}
 .table--column-header{font-family: $headingFont; border-bottom-width: .2rem}

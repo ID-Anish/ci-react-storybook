@@ -31,20 +31,20 @@ import { faThumbsUp, faSpinner, faUniversalAccess, faCode, faCog} from '@fortawe
 class App extends Component {
   render(){
     return(
-      <div className="App">
+      <div className="App p-1">
         <h1 className="page--heading">React components</h1>
         
         {/*****Table*****/}
         <div className="box mb-10">
-          <h2 className="page--heading-uppercase page--heading-grey">Table styling</h2>
+          <h2 className="page--heading page--heading-uppercase page--heading-grey">Table styling</h2>
           <TableNormal />
-          <h3>Table Striped</h3>
+          <h3 className="page--heading">Table Striped</h3>
           <TableAlternateRowColor />
         </div>
 
         {/*****Buttons*****/}
         <div className="box mb-10">
-          <h2 className="page--heading-uppercase page--heading-grey">Button styling</h2>
+          <h2 className="page--heading page--heading-uppercase page--heading-grey">Button styling</h2>
           <ButtonElement btnType="button" styleName="btn--default mr-2" btnText="Default" />
           <ButtonElement btnType="submit" styleName="btn--primary mr-2" btnText="Primary" />
           <ButtonElement btnType="reset" styleName="btn--secondary mr-2" btnText="Secondary" />
@@ -53,7 +53,7 @@ class App extends Component {
 
         {/*****Headings*****/}
         <div className="box mb-10">
-          <h2 className="page--heading-uppercase page--heading-grey">Heading styling</h2>
+          <h2 className="page--heading page--heading-uppercase page--heading-grey">Heading styling</h2>
           <HeadingElement level="1" styleName="page--heading-one" headingText="h1 - Heading one" />
           <HeadingElement level="2" styleName="page--heading-two" headingText="h2 - Heading two" />
           <HeadingElement level="3" styleName="page--heading-three" headingText="h3 - Heading three" />
@@ -64,7 +64,7 @@ class App extends Component {
 
         {/*****Alert message*****/}
         <div className="box mb-10">
-          <h2 className="page--heading-uppercase page--heading-grey">Alert message styling</h2>
+          <h2 className="page--heading page--heading page--heading-uppercase page--heading-grey">Alert message styling</h2>
           <AlertElement alertType="success" styleName="alert--success" alertText="This is success message" />
           <AlertElement alertType="warning" styleName="alert--warning" alertText="This is warning message" />
           <AlertElement alertType="error" styleName="alert--error" alertText="This is error message" />
@@ -78,14 +78,14 @@ class App extends Component {
 
         {/*****Navbar*****/}
         <div className="box mb-10">
-          <h2 className="page--heading-uppercase page--heading-grey">Navbar styling</h2>
+          <h2 className="page--heading page--heading-uppercase page--heading-grey">Navbar styling</h2>
           <PrimaryNavigation />
           <SecondaryNavigation />
         </div>
 
         {/*****Router navigation*****/}
         <div className="box mb-10">
-          <h2 className="page--heading-uppercase page--heading-grey">Router Example</h2>
+          <h2 className="page--heading page--heading-uppercase page--heading-grey">Router Example</h2>
           <Router>
             <Nav />
 
@@ -109,21 +109,21 @@ class App extends Component {
 
         {/*****Breadcrumb*****/}
         <div className="box mb-10">
-          <h2 className="page--heading-uppercase page--heading-grey">Breadcrumb styling</h2>
+          <h2 className="page--heading page--heading-uppercase page--heading-grey">Breadcrumb styling</h2>
           <Breadcrumb />
           <BreadcrumbRound />
         </div>
 
         {/*****Pagination*****/}
         <div className="box mb-10">
-          <h2 className="page--heading-uppercase page--heading-grey">Paging styling</h2>
+          <h2 className="page--heading page--heading-uppercase page--heading-grey">Paging styling</h2>
           <PagingNav />
           <PagingShowmore pagingText="Show More" />
         </div>  
 
         {/*****Badge*****/}
         <div className="box mb-10">
-          <h2 className="page--heading-uppercase page--heading-grey">Badge styling</h2>
+          <h2 className="page--heading page--heading-uppercase page--heading-grey">Badge styling</h2>
           <BadgeElement badgetType="default" styleName="badge--default mr-1" badgeText="Default" />
           <BadgeElement badgetType="primary" styleName="badge--primary mr-1" badgeText="Primary" />
           <BadgeElement badgetType="error" styleName="badge--error mr-1" badgeText="Error" />
@@ -133,7 +133,7 @@ class App extends Component {
 
         {/*****Icons*****/}
         <div className="box mb-10">
-          <h2 className="page--heading-uppercase page--heading-grey">Icon examples</h2>
+          <h2 className="page--heading page--heading-uppercase page--heading-grey">Icon examples</h2>
           <div className="box mb-8">
             <i className="box-inline mr-5"><FontAwesomeIcon icon="thumbs-up" size="3x" /></i>
             <i className="box-inline mr-5"><FontAwesomeIcon icon="thumbs-up" size="2x" /></i>
@@ -182,7 +182,7 @@ class App extends Component {
         
         {/*****Form Elements*****/}
         <div className="box mb-10">
-          <h2 className="page--heading-uppercase page--heading-grey">Form elements styling</h2>
+          <h2 className="page--heading page--heading-uppercase page--heading-grey">Form elements styling</h2>
           <form className="form--container">
             {/*input text*/}
             <div className="form--row box mb-4">
@@ -210,7 +210,7 @@ class App extends Component {
 
             {/*input checkbox*/}
             <div className="form--row box mb-4">
-              <h3 className="mb-2">Checkbox</h3>
+              <h3 className="page--heading mb-2">Checkbox</h3>
               <ul className="box unordered-list m-0 p-0">
                 <li className="unordered-list--item mb-2"><InputCheckbox checkboxName="item-list-checkbox1" labelText="Item one" /></li>
                 <li className="unordered-list--item mb-2"><InputCheckbox checkboxName="item-list-checkbox2" labelText="Item two" /></li>
@@ -220,7 +220,7 @@ class App extends Component {
 
             {/*input radio*/}
             <div className="form--row box mb-4">
-              <h3 className="mb-2">Radio</h3>
+              <h3 className="page--heading mb-2">Radio</h3>
               <ul className="box unordered-list m-0 p-0">
                 <li className="unordered-list--item mb-2"><InputRadio radioName="item-list-radio" labelText="Item one" /></li>
                 <li className="unordered-list--item mb-2"><InputRadio radioName="item-list-radio" labelText="Item two" /></li>
@@ -230,7 +230,7 @@ class App extends Component {
 
             {/*input datepicker*/}
             <div className="form--row box">
-              <h3 className="mb-2">Datepicker</h3>
+              <h3 className="page--heading mb-2">Datepicker</h3>
               <PickDate />
             </div>
           
