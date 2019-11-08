@@ -1,5 +1,5 @@
 import React from 'react';
-import { TableNormal, TableAlternateRowColor } from '../src/components/tableElement-storybook';
+import { TableNormal, TableAlternateRowColor } from '../src/components/tableElement';
 
 export default {
   component: {TableNormal, TableAlternateRowColor},
