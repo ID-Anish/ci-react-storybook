@@ -1,13 +1,13 @@
 import React from 'react';
 import { TableNormal, TableAlternateRowColor } from '../src/components/tableElement';
+import { storiesOf } from "@storybook/react";
+// import { text } from "@storybook/addon-knobs";
 
-export default {
-  component: {TableNormal, TableAlternateRowColor},
-  title: 'Table',
-};
+storiesOf("Table", module)
+  .add("Default", () => <TableNormal />, {
+    notes: "Default table."
+  })
 
-//Default Table
-export const Table = () => <TableNormal />;
-
-//Default Table Alternate
-export const TableAlternateRow = () => <TableAlternateRowColor />;
+  .add("Alternate color table", () => <TableAlternateRowColor />, {
+    notes: "Alternate color table."
+  });
