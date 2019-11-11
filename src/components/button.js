@@ -6,7 +6,7 @@ import '../stylesheets/components/_button.scss';
 class ButtonElement extends Component{
     render() {
         return (
-          <button type={this.props.btnType} className={classnames('btn', this.props.styleName)}>
+          <button type={this.props.btnType} className={classnames('btn', this.props.styleName)} onClick = {this.props.click}>
             {this.props.btnText}
           </button>
         );

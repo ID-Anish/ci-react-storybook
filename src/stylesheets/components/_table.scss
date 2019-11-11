@@ -6,3 +6,16 @@
 .table--column{padding:1rem 1.5rem;text-align:left;border:none;}
 .table--row-divider{border-bottom: $border;}
 .table--column-header{font-family: $headingFont; border-bottom-width: .2rem}
+
+
+.table{
+    th{
+        font-family: $primaryFontMedium;
+    }
+    th, td{
+        border:none;
+    }
+}
+caption{caption-side: top;}
+
+

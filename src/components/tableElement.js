@@ -1,84 +1,57 @@
-import React, { Component } from 'react';
+import React from 'react';
+import classnames from 'classnames';
 import '../stylesheets/components/_table.scss';
-
-//Table
-class TableNormal extends Component {
+class CiTable extends React.Component {
+    
+    // constructor(props){
+    //   super(props);
+    //   this.getHeader = this.getHeader.bind(this);
+    //   this.getRowsData = this.getRowsData.bind(this);
+    //   this.getKeys = this.getKeys.bind(this);
+    // }
+    
+    getKeys = function(){
+      return Object.keys(this.props.data[0]);
+    }
+    
+    getColumns = function(){
+      var keys = this.getKeys();
+      return keys.map((key, index)=>{
+        return <th scope="col" key={key} className={classnames('', this.props.headerClass)}>{key.toUpperCase()}</th>
+      })
+    }
+    
+    getRows = function(){
+      var items = this.props.data;
+      var rowClass = this.props.rowClass;
+      var keys = this.getKeys();
+      return items.map((row, index)=>{
+        return <tr key={index}><RenderRow key={index} data={row} keys={keys} rowClass={rowClass}/></tr>
+      })
+    }
+    
     render() {
-        return(
-            <table className="table mb-5">
-                <thead>
-                    <tr>
-                        <th scope="col" className="table--column table--column-header table--column-three table--row-divider">Head one</th>
-                        <th scope="col" className="table--column table--column-header table--column-three table--row-divider">Head two</th>
-                        <th scope="col" className="table--column table--column-header table--column-three table--row-divider">Head three</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td className="table--column table--row-divider">One</td>
-                        <td className="table--column table--row-divider">Two</td>
-                        <td className="table--column table--row-divider">Three</td>
-                    </tr>
-                    <tr>
-                        <td className="table--column table--row-divider">One</td>
-                        <td className="table--column table--row-divider">Two</td>
-                        <td className="table--column table--row-divider">Three</td>
-                    </tr>
-                    <tr>
-                        <td className="table--column table--row-divider">One</td>
-                        <td className="table--column table--row-divider">Two</td>
-                        <td className="table--column table--row-divider">Three</td>
-                    </tr>
-                    <tr>
-                        <td className="table--column table--row-divider">One</td>
-                        <td className="table--column table--row-divider">Two</td>
-                        <td className="table--column table--row-divider">Three</td>
-                    </tr>
-                </tbody>
+        return (
+          <div>
+            <table className={classnames('table', this.props.tableClass)} role="table">
+              <caption className="">Connect.ID Intelligence data table</caption>
+            <thead>
+              <tr>{this.getColumns()}</tr>
+            </thead>
+            <tbody>
+              {this.getRows()}
+            </tbody>
             </table>
+          </div>
+          
         );
     }
 }
 
-
-//Table with alternate row color
-class TableAlternateRowColor extends Component {
-    render() {
-        return(
-            <table className="table">
-                <thead>
-                    <tr>
-                        <th scope="col" className="table--column table--column-header table--column-three table--striped-row">Head one</th>
-                        <th scope="col" className="table--column table--column-header table--column-three table--striped-row">Head two</th>
-                        <th scope="col" className="table--column table--column-header table--column-three table--striped-row">Head three</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td className="table--column">One</td>
-                        <td className="table--column">Two</td>
-                        <td className="table--column">Three</td>
-                    </tr>
-                    <tr>
-                        <td className="table--column table--striped-row">One</td>
-                        <td className="table--column table--striped-row">Two</td>
-                        <td className="table--column table--striped-row">Three</td>
-                    </tr>
-                    <tr>
-                        <td className="table--column">One</td>
-                        <td className="table--column">Two</td>
-                        <td className="table--column">Three</td>
-                    </tr>
-                    <tr>
-                        <td className="table--column table--striped-row">One</td>
-                        <td className="table--column table--striped-row">Two</td>
-                        <td className="table--column table--striped-row">Three</td>
-                    </tr>
-                </tbody>
-            </table>
-        );
-    }
+const RenderRow = (props) =>{
+  return props.keys.map((key, index)=>{
+    return <td key={props.data[key]} className={classnames('', props.rowClass)}>{props.data[key]}</td>
+  })
 }
 
-
-export { TableNormal, TableAlternateRowColor };
+export { CiTable };
