@@ -23,9 +23,9 @@ import { PickDate } from './components/datepicker';
 //fontawesome icons
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faThumbsUp, faSpinner, faUniversalAccess, faCode, faCog} from '@fortawesome/free-solid-svg-icons'
+import { faThumbsUp, faSpinner, faUniversalAccess, faCode, faCog, faSort, faSortUp, faSortDown} from '@fortawesome/free-solid-svg-icons'
   //fontawesome icon library
-  library.add(faThumbsUp, faSpinner, faUniversalAccess, faCode, faCog)
+  library.add(faThumbsUp, faSpinner, faUniversalAccess, faCode, faCog, faSort, faSortUp, faSortDown)
 
 
 class App extends Component {
@@ -177,6 +177,12 @@ class App extends Component {
             <i className="box-inline mr-5"><FontAwesomeIcon icon="cog" size="md" /></i>
             <i className="box-inline mr-5"><FontAwesomeIcon icon="cog" size="sm" /></i>
             <i className="box-inline"><FontAwesomeIcon icon="cog" size="xs" /></i>
+          </div>
+
+          <div className="box">
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="sort" size="2x" /></i>
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="sort-up" size="2x" /></i>
+            <i className="box-inline mr-5"><FontAwesomeIcon icon="sort-down" size="2x" /></i>
           </div>
         </div>
         
