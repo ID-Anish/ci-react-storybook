@@ -35,12 +35,12 @@ class CiTable extends React.Component {
           <div>
             <table className={classnames('table', this.props.tableClass)} role="table">
               <caption className="">Connect.ID Intelligence data table</caption>
-            <thead>
-              <tr>{this.getColumns()}</tr>
-            </thead>
-            <tbody>
-              {this.getRows()}
-            </tbody>
+              <thead>
+                <tr>{this.getColumns()}</tr>
+              </thead>
+              <tbody>
+                {this.getRows()}
+              </tbody>
             </table>
           </div>
           
