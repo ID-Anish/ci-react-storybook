@@ -8,7 +8,7 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "classnames": "^2.2.6",
     "hamburgers": "^1.1.3",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "react": "^16.11.0",
     "react-animenu": "^1.0.11",
     "react-burger-menu": "^2.6.11",
